@@ -1,0 +1,414 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #bbbaba;
+}
+
+h3{
+    font-weight: 100;
+}
+
+h3{
+    font-weight: 200;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    position: fixed;
+    box-shadow: 0px 1px 10px #e4e4e4;
+    background: white;
+}
+
+img.avatar{    
+    width: 32px;
+    height: 32px;
+    border-radius: 30px;
+    align-self: center;
+    background: url('https://yt3.ggpht.com/-2pwAciNrzgo/AAAAAAAAAAI/AAAAAAAAAAA/Ea0FoWOF-sM/s88-c-k-no-mo-rj-c0xffffff/photo.jpg');
+    background-size: cover;
+    border: none;
+}
+
+header > .menu-container > a > img{
+    max-width: 128px;
+    max-height: 20px;
+}
+
+header > .menu-container > i{
+    top: -4px;
+    position: relative;
+    font-size: 16px;
+    color: #a0a0a0;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+header > .search-container{
+    display: flex;
+    height: 30px;
+}
+
+header > .search-container > input{
+    height: 100%;
+    width: 400px;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-width: 1px;
+    border-right-style: none;
+    padding: 5px 10px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+header > .search-container > button{
+    height: 100%;
+    width: 80px;
+    background: #f8f8f8;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-width: 1px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+header > .search-container > button:hover{
+    cursor: pointer;
+    background: #ebebeb;
+    color: black;
+}
+
+header > .search-container > button > i{
+    color: #838383;
+    font-size: 14px;
+}
+
+header > .buttons-container{
+    display: flex;
+    align-items: center;
+}
+
+header > .buttons-container i {
+    position: relative;
+    font-size: 16px;
+    color: #a0a0a0;
+    margin-right: 20px;
+}
+
+
+section{
+    background: #fafafa;
+    padding: 30px 40px;
+}
+
+section > .videos-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    margin-bottom: 30px;
+}
+
+
+section > .videos-container > .video-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5px;
+}
+
+section > .videos-container > .video-container > a{
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+}
+
+section > .videos-container > .video-container > a > img{
+    width: 210px;
+    height: 118px;
+    background: url('https://i.ytimg.com/vi/TUpdElv3U_g/maxresdefault.jpg');
+    background-size: cover;
+}
+
+section > .videos-container > .video-container > a > h5{
+    margin: 10px 0px;
+}
+
+section > .videos-container > .video-container > ul{
+    list-style-type: none;
+}
+
+section > .videos-container > .video-container > ul > li > a{
+    color: #60656e;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+section > .videos-container > .video-container.keep-watching{
+    flex-direction: row;
+}
+
+section > .videos-container > .video-container.keep-watching > .video-detail{
+    margin: 0px 0px 0px 20px;
+}
+
+section > .videos-container > .video-container.keep-watching > .video-detail > h5{
+    margin-bottom: 10px;
+}
+
+section > .videos-container > .video-container.keep-watching > .video-detail > ul{
+    list-style-type: none;
+    display: flex;
+}
+
+section > .videos-container > .video-container.keep-watching > .video-detail > ul > li + li {
+    margin-left: 10px;
+}
+
+section > .videos-container > .video-container.keep-watching > .video-detail > ul > li > a{
+    color: #60656e;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+section > .videos-container > .video-container.keep-watching > .video-detail > p > a{
+    display: block;
+    margin-top: 10px;
+    color: #60656e;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+section > h3{
+    display: flex;
+    align-items: center;
+}
+
+section > h3 > a > img{
+    margin-right: 10px;
+}
+
+section > h3 > span{
+    color: #60656e;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+section > h3 > .actions-container{
+    display: flex;
+    float: right;
+    align-items: center;
+    margin-left: auto;
+}
+
+section > h3 > .actions-container > i{
+    color: #60656e;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+section > h3 > .actions-container > button.subscribe{
+    padding: 10px;
+    color: white;
+    background: red;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+section > .videos-container.videos-recommended{
+    flex-flow: row nowrap;
+    overflow: hidden;
+    align-items: center;
+}
+
+section > .videos-container.videos-recommended > button{
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    margin-top: -45px;
+}
+
+section > .videos-container.videos-recommended > button > i{
+    font-size: 44px;
+    color: white;
+    background: rgb(158, 158, 158);
+    border-radius: 30px;
+    box-shadow: 0px 2px 5px black;
+}
+
+section > .videos-container > .video-container.channel-recommended{
+    flex-direction: row;
+}
+
+section > .videos-container > .video-container.channel-recommended > .video-detail{
+    margin: 0px 0px 0px 20px;
+}
+
+section > .videos-container > .video-container.channel-recommended > .video-detail > h5{
+    margin-bottom: 10px;
+}
+
+section > .videos-container > .video-container.channel-recommended > .video-detail > ul{
+    list-style-type: none;
+    display: flex;
+}
+
+section > .videos-container > .video-container.channel-recommended > .video-detail > ul > li + li {
+    margin-left: 10px;
+}
+
+section > .videos-container > .video-container.channel-recommended > .video-detail > ul > li > a{
+    color: #60656e;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+section > .videos-container > .video-container.channel-recommended > .video-detail > p > a{
+    display: block;
+    margin-top: 10px;
+    color: #60656e;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.container{
+    padding-top: 50px;
+}
+
+.aside-opened > section{
+    width: 80%;
+    margin-left: 20%;
+}
+
+aside{
+    margin-left: -20%;
+    width: 20%;
+    position: fixed;
+    background: #f5f5f5;
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    overflow-y: scroll;
+    margin-top: 50px;
+}
+
+aside > ul{
+    padding: 15px 0px;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+aside > ul:first-child > li:first-child{
+    background: #dcdcdc;
+}
+
+aside > ul:first-child > li:first-child > a > i{
+    color: red;
+}
+
+aside > ul > li{
+    padding: 12px 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+aside > ul > li:hover{
+    background: #dcdcdc;
+}
+
+aside > ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+aside > ul > li > a > i{
+    width: 15px;
+    margin-right: 15px;
+    color: #696969;
+}
+
+
+
+aside > ul.links > .links-group > li{
+    padding: 2px 30px;
+    display: flex;
+    align-items: center;
+    cursor: initial;
+}
+
+aside > ul.links > .links-group > li:hover{
+    background: initial;
+}
+
+aside > ul.links > .links-group > li > a{
+    text-decoration: none;
+    color:#626262;
+    font-size: 12px;
+}
+
+aside > ul.links > .links-group > li > a + a{
+    margin-left: 10px;
+}
+
+aside > ul.links > .links-group + .links-group{
+    margin-top: 10px;
+}
+
+aside.opened{
+    margin-left: 0%;
+}
+
+body.overleap::before{
+    background: black;
+    position: fixed;
+    width: 80%;
+    margin-left: 20%;
+    height: 100%;
+    opacity: .5;
+    content: '';
+    z-index: 2;
+}
+
+aside > ul > h5{
+    margin: 5px 30px;
+    color: #696969;
+}
+
+aside > ul > li > a{
+    display: flex;
+    align-items: center;
+}
+
+aside > ul > li > a > img{
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    background: url('https://yt3.ggpht.com/a-/AAuE7mD4UZWojIOV_HfmWokM5PpW-uwFDtXHUcwQrA=s88-mo-c-c0xffffffff-rj-k-no');
+    background-size: cover;
+    border-radius: 30px;
+}
